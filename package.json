@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx prisma migrate dev --name init && next start",
+    "start": "npm install prisma --save-dev && npx prisma init --datasource-provider sqlite && npx prisma migrate dev --name init && next start",
     "lint": "next lint"
   },
   "dependencies": {
