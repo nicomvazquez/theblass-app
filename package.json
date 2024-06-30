@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npm install prisma --save-dev && npx prisma init --datasource-provider sqlite && npx prisma migrate dev --name init && next start",
-    "lint": "next lint"
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^5.15.1",
