@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 
-function page() {
+function Page() {
   const [categorys, setcategorys] = useState([]);
 
   const {
@@ -98,4 +98,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

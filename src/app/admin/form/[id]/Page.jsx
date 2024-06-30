@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useRouter, useParams } from "next/navigation";
 import prisma from "@/libs/prisma";
 
-function page() {
+function Page() {
   const [imgUrl, setImgUrl] = useState(null);
   const [categorys, setCategorys] = useState([]);
 
@@ -155,4 +155,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

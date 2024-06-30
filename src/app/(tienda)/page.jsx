@@ -15,7 +15,7 @@ async function page() {
       <div className="px-5 py-20">
         <div className="grid grid-cols-3 m-auto gap-5 justify-between max-w-[1280px]">
           {posts.map((post) => (
-            <ProductTag product={post} />
+            <ProductTag key={post.id} product={post} />
           ))}
         </div>
       </div>

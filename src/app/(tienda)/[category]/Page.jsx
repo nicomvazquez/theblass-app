@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 
 import ProductTag from "@/components/ProductTag";
 
-function page() {
+function Page() {
   const [posts, setPosts] = useState([]);
 
   const { category } = useParams();
@@ -28,7 +28,7 @@ function page() {
         )}
         <div className="grid grid-cols-3 gap-5 justify-between w-full">
           {posts.map((post) => (
-            <ProductTag product={post} />
+            <ProductTag key={post.id} product={post} />
           ))}
         </div>
       </div>
@@ -36,4 +36,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
