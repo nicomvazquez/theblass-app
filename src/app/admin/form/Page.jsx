@@ -25,7 +25,7 @@ function Page() {
 
   return (
     <section className="text-center py-20 px-3">
-      <h1 className="text-4xl font-semibold pb-8">new product</h1>
+      <h1 className="text-4xl font-semibold pb-8">new product.</h1>
       <form
         action=""
         className="flex flex-col max-w-2xl text-2xl bg-white shadow-xl p-5 m-auto text-start rounded-lg"
